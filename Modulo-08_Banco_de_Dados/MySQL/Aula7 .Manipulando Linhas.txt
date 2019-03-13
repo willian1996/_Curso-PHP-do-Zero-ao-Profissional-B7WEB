@@ -1,0 +1,59 @@
+Aula7 (MANIPULANDO LINHAS QUE SÃO A MESMA COISA QUE REGISTROS DA TEBELA)
+
+#Mudar o nome do registro para 'HTML5'
+
+update cursos
+
+set nome = 'HTML5'
+
+where idcurso = '1'
+
+limit 1;
+
+
+
+#Mudar o nome do registro para 'PHP' e o ano para '2015'
+
+update cursos
+
+set nome = 'PHP', ano = '2015'
+
+where idcurso = '4'
+
+limit 1;
+
+
+
+#Mudar o nome do registro para Java, ano para '2015' e carga para '40'
+
+update cursos 
+
+set nome = 'Java', ano = '2015', carga = '40'
+
+where idcurso = '5'
+
+limit 1;
+
+
+
+#Mudando o ano do registro para '2050' e carga para '800' onde o ano for = '2018'
+
+update cursos
+
+set ano = '2050', carga = '800'
+
+where ano = '2018';
+
+
+
+#Apagar um registro da tabela cursos 
+
+delete from cursos 
+
+where idcurso = '10';
+
+
+
+#Apagar todos os registros da tabela, OBS é indicado fazer backup antes
+
+truncate table cursos;

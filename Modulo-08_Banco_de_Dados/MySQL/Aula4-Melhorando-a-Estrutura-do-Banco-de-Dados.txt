@@ -1,0 +1,35 @@
+#AULA 4
+
+ (Melhorando a Estrutura do Banco de Dados)
+
+
+
+
+create database CADASTRO
+default character set utf8
+
+default collate utf8_general_ci;
+
+
+
+
+
+create table PESSOAS(
+
+	ID int not null auto_increment,
+
+	NOME varchar(30) not null,
+
+	NASCIMENTO date,
+
+	SEXO enum('M', 'f'),
+
+	PESO decimal(5,2),
+
+	ALTURA decimal(3,2),
+
+	NACIONALIDADE varchar(20) default 'Brasil',
+
+	primary key(ID)
+
+)default charset = utf8;

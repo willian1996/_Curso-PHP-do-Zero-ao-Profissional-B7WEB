@@ -1,0 +1,25 @@
+#AULA 3
+
+ (CRIANDO E APAGANDO BANCO DE DADOS SIMPLES)
+
+create database cadastro2;
+
+
+ create table pessoas( 
+ 	nome varchar(30),
+
+ 	idade tinyint,
+ 
+	sexo char(1),
+ 
+	peso float,
+ 
+	altura float,
+ 
+	nacionalidade varchar(20)
+
+);
+
+
+
+drop database cadastro2;

@@ -1,0 +1,118 @@
+#AULA 6 (ALTERANDO ESTRUTURA DA TABELA)
+
+#ADICIONANDO UMA COLUNA 
+
+alter table pessoas
+
+add column profissao varchar(10);
+
+
+
+#APAGANDO UMA COLUNA 
+
+alter table pessoas
+
+drop column profissao;
+
+
+
+#ADICIONANDO UMA COLUNA APOS OUTRA COLUNA JÁ EXISTENTE COM 'AFTER'
+
+alter table pessoas
+
+add column profissao varchar(10) after nome;
+
+
+
+#ADICIONANDO UMA COLUNA ANTES DE TODAS AS COLUNAS COM 'FIRST'
+
+alter table pessoas
+
+add column profissao varchar(10) first;
+
+
+
+#MODIFICANDO O LIMITE DE CHARACTER DA COLUNA COM 'MODIFY'  
+
+alter table pessoas
+
+modify column profissao varchar(30);
+
+
+
+#MUDANDO O NOME DA COLUNA DE *PROFISSAO* PARA *PROF* COM O 'CHANGE'
+
+alter table pessoas
+
+change column profissao prof varchar(20);
+
+
+
+#RENOMEANDO O NOME DA TABLEA DE *PESSOAS* PARA *GAFANHOTOS* COM O 'RENAME TO'
+
+alter table pessoas
+
+rename to gafanhotos;
+
+
+
+#CRIANDO UMA NOVA TABELA PARA TESTAR COMANDOS
+create table if not exists cursos(
+
+nome varchar(30) not null unique, 
+
+descricao text,
+
+carga int unsigned,
+
+totaulas int unsigned,
+
+ano year default '2016'
+
+)default charset=utf8;
+
+
+
+
+
+#ADICIONANDO UMA COLUNA PARA USAR COMO PRIMARY KEY 
+
+alter table cursos
+
+add column idcurso int first;
+
+
+
+#ADICIONANDO UMA PRIMARY KEY A COLUNA idcurso
+
+alter table cursos
+
+add primary key (idcurso);
+
+
+
+create table if not exists teste(
+
+id int,
+
+nome varchar(10),
+
+idade int
+);
+
+#APAGANDO UMA TABELA 
+drop table teste;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
