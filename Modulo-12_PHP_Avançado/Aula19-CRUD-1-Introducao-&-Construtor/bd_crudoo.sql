@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 23-Mar-2019 às 15:54
+-- Generation Time: 01-Abr-2019 às 15:31
 -- Versão do servidor: 5.7.21
 -- PHP Version: 7.2.4
 
@@ -34,7 +34,15 @@ CREATE TABLE IF NOT EXISTS `contatos` (
   `nome` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
   `email` varchar(100) CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `contatos`
+--
+
+INSERT INTO `contatos` (`id`, `nome`, `email`) VALUES
+(3, 'Willian Sales Gabriel', 'williansalesgabriel@hotmail.com'),
+(7, 'Fulano De paula', 'fulano@hotmail.com');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

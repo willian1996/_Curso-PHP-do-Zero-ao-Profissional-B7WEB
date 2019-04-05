@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+</head>
+<body>
+    <div>
+        Neste artigo, introduziremos o conceito de AJAX, abordando sobre a origem do termo e mostrando cada uma das tecnologias envolvidas em seu funcionamento, como XHTML, CSS, DOM e JavaScript. O AJAX agora vem integrado ao JavaServer Faces 2, parte integrante do Java EE 6, dispensando a necessidade de uso de frameworks externos. Para demonstrar essa integração, criaremos uma aplicação na prática, explicitando como é fácil utilizar o AJAX da forma como hoje ele é disponibilizado.
+
+Tendo em vista que o que vamos aprender neste artigo é como utilizar scripts síncronos e assíncronos, um dos principais conceitos que devemos entender é “o que é sincronia”. Dizemos que duas coisas são síncronas quando há uma exata coincidência no tempo ou no ritmo delas. No esporte, sempre ouvimos falar em nado sincronizado, onde as atletas coincidem todos os movimentos do início ao fim da execução da coreografia.
+
+Na computação, quando uma tarefa precisa aguardar a tarefa anterior ser concluída para iniciar sua execução, dizemos que estas tarefas são síncronas. Por outro lado, vamos supor agora que duas ou mais tarefas precisam ser executadas e que não há nenhuma dependência entre elas. Ganharíamos tempo se elas fossem executadas ao mesmo tempo, contanto que o instante de conclusão de cada uma não importasse nem influenciasse a outra. Neste caso, dizemos que as tarefas foram executadas de forma assíncrona. Tais conceitos são fundamentais para entendermos como criar aplicações mais dinâmicas e interativas.
+
+Sempre foi um grande desafio para os desenvolvedores de software para internet criar interfaces que fossem fáceis de operar, intuitivas e que procurassem minimizar a demora de comunicação com o servidor de internet para exibir dados na tela. Quando o conceito de AJAX surgiu, veio propondo uma nova abordagem de interação para o desenvolvimento de interfaces para internet. Algumas aplicações disponíveis na época de seu surgimento, como sítios de webmail, busca, mapas, mensagens instantâneas, entre outros, já utilizavam as tecnologias do AJAX. Tais sítios eram exemplos de inovação em interatividade.
+
+Na época, já havia vários frameworks para o desenvolvimento da camada de apresentação das aplicações que procuravam atender às novas necessidades de evolução das interfaces web. Para o Java, a partir de 2004, lançaram o JavaServer Faces 1.0 (JSF), cujo objetivo era facilitar o desenvolvimento destas interfaces de usuário de aplicações Java para a internet. Com o Java EE 6, veio a versão 2.0 do JSF. Tal framework oferece recursos similares aos encontrados em interfaces para desktop, evita que equipes de desenvolvimento precisem dominar tecnologias como JavaScript, HTML e CSS, maximizava a produtividade dos desenvolvedores, auxilia na criação e reuso de componentes visuais e já vem com AJAX integrado.
+
+Considerando vantagens como facilidade, interatividade, entre outras citadas até agora, neste artigo apresentamos o que é AJAX, quais os benefícios do sincronismo/assincronismo propiciado por ele, quais as tecnologias envolvidas e veremos como ele está embutido no JSF 2 através de uma aplicação exemplo.
+
+HTML, XML e XHTML
+Todo navegador web compreende HTML (HyperText Markup Language ou Linguagem de Marcação de Hipertexto), que é uma linguagem formada por tags, ou marcadores, que são interpretadas pelos navegadores. Estes marcadores indicam como renderizar e exibir o conteúdo das páginas web. Um exemplo de uma página simples com suas tags HTML pode ser visto a seguir:
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
