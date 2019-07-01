@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /_curso-php-do-zero-ao-profissional-b7web/Modulo-16-PHP-Super-Avancado/5-Estrutura-MVC-Index-+-Rewrite/index.php?url=$1 [QSA,L]
+

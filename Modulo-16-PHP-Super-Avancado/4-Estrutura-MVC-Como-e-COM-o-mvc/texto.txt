@@ -1,0 +1,20 @@
+MODEL
+    *Modelar as entidades do sistema
+    -conectar com a fonte de dados
+    -receber dados
+    -tratar dados
+    -validar dados 
+VIEW
+    *Interface de comunicação com usuario 
+    -HTML & CSS
+    -JavaScript
+    -Formulário
+    -Gráfico
+    -Tabela 
+CONTROLLER
+    *Responsavel por controlar a comunicação
+    -receber requisições do usuario
+    -tratar requisições 
+    -devolver requisições para usuario
+    -
+    
