@@ -1,0 +1,9 @@
+body{
+    background-color: ghostwhite;
+}
+.borda{
+    border: 1px solid #FF0000;
+    padding: 20px;
+    width: 370px;
+    height: 200px;
+}
